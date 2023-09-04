@@ -1,0 +1,242 @@
+*{
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100%;
+    background-color: rgba(167, 46, 46, 0.392);
+}
+
+header, nav, main, footer{
+    margin: 1% 5%;
+}
+
+h1{
+    color: white;
+    font-size: 2.5rem;
+}
+
+h2{
+    color: black;
+    font-size: 2rem;
+}
+
+h3{
+    color: black;
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+header img{
+    display: block;
+    width: 10rem;
+    margin: 0 auto;
+}
+
+nav{
+    height: 3rem;
+    background-color: rgba(165, 42, 42, 0.571);
+    border: 0;
+    border-radius: 1rem;
+}
+
+nav ul {
+    font-weight: 900;
+    text-align: center;
+    list-style: none;
+    margin-top: 3%;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0.7rem 1rem 0 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+a:hover{
+    color: blue;
+}
+
+a:active{
+    color: red;
+}
+
+a:visited{
+    color:blue;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    margin-top:3%;
+}
+
+article{
+    position: relative;
+}
+
+.boutique-banner{
+    color: white;
+    width: 100%; 
+    background-image: url('images/boutique-ad.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    border-radius: 1rem;
+}
+
+.boutique-banner::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    border: 0;
+    border-radius: 1rem;
+}
+
+#banner-h1, #banner-p, #banner-btn{
+    position: relative ;
+    margin-left: 0.8rem;
+}
+
+#banner-h1{
+    padding-top: 3rem;
+    padding-bottom: 0.5rem;
+}
+
+#banner-p{
+    padding-bottom: 1rem;
+    margin-right: 30%;
+}
+
+#banner-btn{
+    color: black;
+    background-color: white;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 5rem;
+    border: 0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+#banner-btn:hover{
+    color: white;
+    background-color: black;
+}
+
+.blog-box{
+    width: 33%;
+    margin-left: 0.1rem ;
+    margin-right: 0.4rem;
+    background-color:  rgba(165, 42, 42, 0.571);
+    border: 0;
+    border-radius: 1rem;
+}
+
+.blog-box > img{
+    width: 80%;
+    border: 0;
+    border-bottom-right-radius: 1rem;
+}
+
+.blog-box > h2{
+    position: relative;
+    display: inline-block;
+    position: relative;
+    padding: 2rem  0.5rem 0 1rem;   
+}
+
+.blog-box > h2::after{
+    position: absolute;
+    content: '';
+    width: 90%;
+    height: 70%;
+    top: 2rem;
+    right: 0;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.blog-box > p{
+    padding: 1rem 2rem 2rem 1rem;
+}
+
+.toturial-box{
+    width: 100%;
+    height: 30rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.852);
+    border: 0.5rem solid rgba(165, 42, 42, 0.571);
+    border-radius: 1rem;
+}
+
+.toturial-box > div, #toturial-h2, #toturial-p, #toturial-btn{
+    margin-left: 2rem;
+}
+
+.toturial-box > img{
+    position: absolute;
+    width: 20%;
+    top: 2rem;
+    right: 4rem;
+    border: 0;
+    border-radius: 0.5rem;
+}
+
+.toturial-box > h2{
+    color: white;
+    margin-top: 5rem ;
+    padding: 0 0 2rem 0;
+}
+
+.toturial-box > p{
+    padding-bottom: 1rem;
+    margin-right: 35%;
+}
+
+.toturial-box > button{
+    font-size: 1rem;
+    color: white;
+    padding: 1rem;
+    border: 0;
+    border-radius: 0.5rem;
+    background-color: rgba(165, 42, 42, 0.571);
+}
+
+footer{
+    position: relative;
+    display: flex;
+}
+
+footer > div{
+    flex: 1;
+    margin-top: 4rem;
+}
+
+.footer-logo img{
+    border-bottom: 0.1rem solid black;
+    width: 10rem;
+}
+
+footer div + div{
+    text-align: end;
+    border-top: 0.1rem solid black;
+}
